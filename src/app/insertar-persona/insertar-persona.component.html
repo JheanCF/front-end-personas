@@ -1,0 +1,68 @@
+<div class="container">
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+       <h1> Registro de Personas </h1>
+      </a>
+    </div>
+  </nav>
+  <hr>
+  <button type="submit" class="btn btn-primary position-absolute top-50 start-50" (click)="volver()">Volver</button>
+</div>
+<br>
+<br>
+
+<div class="container">
+    <form (ngSubmit)="peticionDatos()">
+        <div class="form-group">
+          <label for="nombres">Nombres:</label>
+          <input type="text" class="form-control" id="nombres" name="nombres" [(ngModel)]="nombres">
+        </div>
+        <div class="form-group">
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" class="form-control" id="apellidos" name="apellidos" [(ngModel)]="apellidos">
+        </div>
+        <div class="form-group">
+          <label for="cedula">Cédula:</label>
+          <input type="text" class="form-control" id="cedula" name="cedula" [(ngModel)]="cedula">
+        </div>
+        <div class="form-group">
+          <label for="correo">Correo:</label>
+          <input type="email" class="form-control" id="correo" name="correo" [(ngModel)]="correo">
+        </div>
+        <div class="form-group">
+          <label for="edad">Edad:</label>
+          <input type="number" class="form-control" id="edad" name="edad" [(ngModel)]="edad">
+        </div>
+        <div class="form-group">
+          <label for="genero">Género:</label>
+          <select class="form-control" id="genero" name="genero" [(ngModel)]="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" class="form-control" id="ciudad" name="ciudad" [(ngModel)]="ciudad">
+        </div>
+        <div class="form-group">
+          <label for="pais">País:</label>
+          <input type="text" class="form-control" id="pais" name="pais" [(ngModel)]="pais">
+        </div>
+        <div class="form-group">
+          <label for="cursos">Cursos:</label>
+          <input type="text" class="form-control" id="cursos" name="cursos" [(ngModel)]="cursos">
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" class="form-control" id="telefono" name="telefono" [(ngModel)]="telefono">
+        </div>
+        <div class="form-group">
+          <label for="fecha_registro">Fecha de registro:</label>
+          <input type="date" class="form-control" id="fecha_registro" name="fecha_registro" [(ngModel)]="fecha_registro">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      
+</div>

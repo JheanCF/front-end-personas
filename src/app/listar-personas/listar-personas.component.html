@@ -1,0 +1,44 @@
+<div class="container">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1> Personas </h1>
+            </a>
+        </div>
+    </nav>
+    <hr>
+    <button type="submit" class="btn btn-primary position-absolute top-50 start-50"
+        (click)="registrarse()">Registrarse</button>
+</div>
+<br>
+<br>
+<div class="container">
+    <table class="table table-striped">
+        <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Documento</th>
+            <th>Correo</th>
+            <th>Edad</th>
+            <th>Genero</th>
+            <th>Ciudad</th>
+            <th>Pais</th>
+            <th>Cursos</th>
+            <th>Telefono</th>
+            <th>Fecha deregistro</th>
+        </tr>
+        <tr *ngFor="let persona of personasList">
+            <td>{{persona.nombres}}</td>
+            <td>{{persona.apellidos}}</td>
+            <td>{{persona.cedula}}</td>
+            <td>{{persona.correo}}</td>
+            <td>{{persona.edad}}</td>
+            <td>{{persona.genero}}</td>
+            <td >{{persona.ciudad}}</td>
+            <td>{{persona.pais}}</td>
+            <td>{{persona.cursos}}</td>
+            <td>{{persona.telefono}}</td>
+            <td>{{persona.fecha_registro}}</td>
+        </tr>
+    </table>
+</div>
